@@ -1,0 +1,15 @@
+<div>
+        Name : <input ng-model="name" /><br/><br/>
+
+    Age : <input ng-model="age" /><br/><br/>
+
+    Address : <input ng-model="address" /><br/><br/>
+
+    <input type="submit" value="Send" ng-click="postdata(name, age, address)" /> <br/><br/>
+
+    </div>
+    <h1 ng-if="data&&data.length">Users in db</h1>
+    <h3 ng-repeat="x in data">{{x.name}}</h3>
+    </div>
+
+</div>
